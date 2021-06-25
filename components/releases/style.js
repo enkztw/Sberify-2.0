@@ -2,34 +2,19 @@ import { css } from '@emotion/core';
 import styled from '@emotion/styled';
 import Swiper from 'react-id-swiper/lib/ReactIdSwiper.custom';
 
-export const SwiperStyled = styled(Swiper)`
-    width: 100%;
+export const ReleasesStyled = styled(Swiper)`
+    z-index: 10;
 `;
 
-// export const RelesesWrapperStyled = styled.div`
-//     display: flex;
-//     align-items: center;
-//     /* padding-left: 36px; */
-//     height: 220px;
-//     margin-top: -48px;
-// `;
-
-export const ReleasesStyled = styled(Swiper)``;
-
 export const ReleaseStyled = styled.li`
-    width: 140px;
-    height: 140px;
+    width: fit-content;
+    height: 60%;
+    min-height: 140px;
+    min-width: 140px;
     flex-shrink: 0;
 
     padding-right: 40px;
     box-sizing: content-box;
-    /* box-shadow: 0 0 10px 2px var(--primary-brand); */
-    /* display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    width: 140px;
-    flex-shrink: 0;
-    margin-right: 5px; */
 `;
 
 const singleStyle = ({ single }) => {
@@ -43,8 +28,8 @@ const singleStyle = ({ single }) => {
 export const CoverStyled = styled.img`
     display: block;
     position: relative;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     border-radius: 4px;
     transition: 0.3s;
     z-index: 1;
@@ -55,10 +40,11 @@ export const CoverStyled = styled.img`
 export const LinkStyled = styled.a`
     position: relative;
     display: block;
+    height: 100%;
 
     &:hover {
         ${CoverStyled} {
-            transform: translateY(-40px);
+            transform: translateY(-25%);
         }
     }
 
@@ -69,7 +55,6 @@ export const InfoStyled = styled.div`
     position: absolute;
     width: 100%;
     bottom: 0px;
-    /* margin-top: - */
 `;
 
 export const NameStyled = styled.h3`

@@ -14,10 +14,9 @@ export const WrapperStyled = styled.div`
     position: relative;
     width: 100%;
     overflow: hidden;
-    height: 800px;
+    min-height: 600px;
     margin-top: -80px;
     z-index: 1;
-    flex-shrink: 0;
 
     &::after {
         content: '';
@@ -33,6 +32,7 @@ export const WrapperStyled = styled.div`
 export const BannerStyled = styled.img`
     width: 100%;
     height: auto;
+    display: block;
 `;
 
 export const TitleStyled = styled.h3`
